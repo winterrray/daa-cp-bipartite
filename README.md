@@ -132,33 +132,33 @@ To integrate the actual C++ code with the React frontend, you would need to:
 
 ## Project Structure
 
-\`\`\`
-bipartite-flow-visualizer/
-├── app/
-│   ├── api/
-│   │   └── algorithms/
-│   │       ├── hopcroft-karp/
-│   │       │   └── route.ts       # API route for Hopcroft-Karp
-│   │       └── edmonds-karp/
-│   │           └── route.ts       # API route for Edmonds-Karp
-│   ├── page.tsx                   # Main page component
-│   └── layout.tsx                 # App layout
-├── components/
-│   ├── algorithm-panel.tsx        # Algorithm results display
-│   ├── algorithm-visualizer.tsx   # Main component with algorithm logic
-│   ├── graph-visualization.tsx    # Graph visualization component
-│   └── input-panel.tsx            # Input configuration panel
-├── cpp/
-│   ├── hopcroft_karp.cpp          # Hopcroft-Karp algorithm implementation
-│   ├── edmonds_karp.cpp           # Edmonds-Karp algorithm implementation
-│   ├── main.cpp                   # Command-line interface
-│   ├── CMakeLists.txt             # CMake configuration
-│   └── build.sh                   # Build script
-├── hooks/
-│   ├── use-mobile.ts              # Responsive design hook
-│   └── use-toast.ts               # Toast notification hook
-└── README.md                      # This file
-\`\`\`
+\`\`\`  
+bipartite-flow-visualizer/  
+├── app/  
+│   ├── api/  
+│   │   └── algorithms/  
+│   │       ├── hopcroft-karp/  
+│   │       │   └── route.ts       # API route for Hopcroft-Karp  
+│   │       └── edmonds-karp/  
+│   │           └── route.ts       # API route for Edmonds-Karp  
+│   ├── page.tsx                   # Main page component  
+│   └── layout.tsx                 # App layout  
+├── components/  
+│   ├── algorithm-panel.tsx        # Algorithm results display  
+│   ├── algorithm-visualizer.tsx   # Main component with algorithm logic  
+│   ├── graph-visualization.tsx    # Graph visualization component  
+│   └── input-panel.tsx            # Input configuration panel  
+├── cpp/  
+│   ├── hopcroft_karp.cpp          # Hopcroft-Karp algorithm implementation  
+│   ├── edmonds_karp.cpp           # Edmonds-Karp algorithm implementation  
+│   ├── main.cpp                   # Command-line interface  
+│   ├── CMakeLists.txt             # CMake configuration  
+│   └── build.sh                   # Build script  
+├── hooks/  
+│   ├── use-mobile.ts              # Responsive design hook  
+│   └── use-toast.ts               # Toast notification hook  
+└── README.md                      # This file  
+\`\`\`  
 
 ## Future Improvements
 
